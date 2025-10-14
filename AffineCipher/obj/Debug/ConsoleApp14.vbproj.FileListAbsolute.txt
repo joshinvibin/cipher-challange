@@ -1,0 +1,24 @@
+C:\Users\joshi\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\ConsoleApp14\bin\Debug\ConsoleApp14.exe.config
+C:\Users\joshi\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\ConsoleApp14\bin\Debug\ConsoleApp14.exe
+C:\Users\joshi\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\ConsoleApp14\bin\Debug\ConsoleApp14.pdb
+C:\Users\joshi\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\ConsoleApp14\bin\Debug\ConsoleApp14.xml
+C:\Users\joshi\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\ConsoleApp14\obj\Debug\ConsoleApp14.vbproj.AssemblyReference.cache
+C:\Users\joshi\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\ConsoleApp14\obj\Debug\ConsoleApp14.Resources.resources
+C:\Users\joshi\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\ConsoleApp14\obj\Debug\ConsoleApp14.vbproj.GenerateResource.cache
+C:\Users\joshi\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\ConsoleApp14\obj\Debug\ConsoleApp14.vbproj.CoreCompileInputs.cache
+C:\Users\joshi\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\ConsoleApp14\obj\Debug\ConsoleApp14.exe
+C:\Users\joshi\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\ConsoleApp14\obj\Debug\ConsoleApp14.xml
+C:\Users\joshi\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\ConsoleApp14\obj\Debug\ConsoleApp14.pdb
+C:\Users\joshi\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets\ConsoleApp14\obj\Debug\ConsoleApp14.exe.config
+C:\Users\joshi\Documents\cipher-challange\AffineCipher\bin\Debug\ConsoleApp14.exe.config
+C:\Users\joshi\Documents\cipher-challange\AffineCipher\bin\Debug\ConsoleApp14.exe
+C:\Users\joshi\Documents\cipher-challange\AffineCipher\bin\Debug\ConsoleApp14.pdb
+C:\Users\joshi\Documents\cipher-challange\AffineCipher\bin\Debug\ConsoleApp14.xml
+C:\Users\joshi\Documents\cipher-challange\AffineCipher\obj\Debug\ConsoleApp14.vbproj.AssemblyReference.cache
+C:\Users\joshi\Documents\cipher-challange\AffineCipher\obj\Debug\ConsoleApp14.exe.config
+C:\Users\joshi\Documents\cipher-challange\AffineCipher\obj\Debug\ConsoleApp14.Resources.resources
+C:\Users\joshi\Documents\cipher-challange\AffineCipher\obj\Debug\ConsoleApp14.vbproj.GenerateResource.cache
+C:\Users\joshi\Documents\cipher-challange\AffineCipher\obj\Debug\ConsoleApp14.vbproj.CoreCompileInputs.cache
+C:\Users\joshi\Documents\cipher-challange\AffineCipher\obj\Debug\ConsoleApp14.exe
+C:\Users\joshi\Documents\cipher-challange\AffineCipher\obj\Debug\ConsoleApp14.xml
+C:\Users\joshi\Documents\cipher-challange\AffineCipher\obj\Debug\ConsoleApp14.pdb
