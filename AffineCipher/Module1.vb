@@ -4,22 +4,31 @@ Module Module1
         word = ReadLine()
         Dim letter As Integer = 0
         Dim extra As Integer = 1
+
+        WriteLine()
+
+
+        WriteLine("Enter letter to start with. If not known press enter")
+        Dim startLetter As String = Console.ReadLine()
+
         For i = 0 To 26
             For j = 1 To 12
                 word1 = ""
                 For k = 0 To Len(word) - 1
-                    If word(k) <> " " Then
+                    If word(k) <> " " And word(k) <> "," And word(k) <> "." And word(k) <> "(" And word(k) <> ")" Then
                         letter = Asc(word(k))
                         letter = letter - 65
                         extra = assist(j)
                         letter = ((letter + i) * extra) Mod 26
                         word1 &= Chr(letter + 65)
                     Else
-                        word1 &= " "
+                        word1 &= word(k)
                     End If
                 Next
 
-                WriteLine(word1)
+                If startLetter = word1(0) Or startLetter = "" Then
+                    WriteLine(word1)
+                End If
                 WriteLine()
                 ReadLine()
 
