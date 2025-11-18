@@ -18,6 +18,8 @@ Module Module1
                     If word(k) <> " " And word(k) <> "," And word(k) <> "." And word(k) <> "(" And word(k) <> ")" Then
                         letter = Asc(word(k))
                         letter = letter - 65
+
+
                         extra = assist(j)
                         letter = ((letter + i) * extra) Mod 26
                         word1 &= Chr(letter + 65)

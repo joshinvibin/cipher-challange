@@ -16,7 +16,12 @@ Module Module1
         For i = 1 To 26
             Write(Chr(i + 64) & ": " & letters(i) & "    ")
         Next
-
+        WriteLine()
+        WriteLine()
+        For i = 1 To 26
+            Write(Chr(i + 64) & ": " & Math.Round(letters(i) / word.Length(), 3) * 100 & "    ")
+        Next
+        WriteLine()
         Return letters
     End Function
     Sub Main()
@@ -26,6 +31,8 @@ Module Module1
 
         Dim temp As Integer = 0
         letters = Freq_Analysis(word)
+
+        WriteLine(word.Length())
 
         'For i = 1 To 25
         '    If letters(i) > letters(i) + 1 Then

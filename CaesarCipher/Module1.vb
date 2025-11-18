@@ -1,13 +1,15 @@
 ﻿Imports System.Console
 Module Module1
     Sub Main()
-        Dim word As String = ""
-        Dim word1 As String = ""
+        Caesar()
     End Sub
 
-    Sub Caesar(ByRef word As String, ByRef word1 As String)
+    Sub Caesar()
+        Dim word As String = ""
+        Dim word1 As String = ""
         Dim letter As Integer = 0
         word = ReadLine().ToUpper
+        WriteLine()
         For i = 1 To 50
             word1 = ""
 
@@ -29,6 +31,7 @@ Module Module1
 
             Next
             WriteLine(word1)
+            WriteLine()
         Next
     End Sub
 End Module

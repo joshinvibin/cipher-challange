@@ -14,17 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Module1.vb",
               "DocumentMoniker": "C:\\Users\\joshi\\Documents\\cipher-challange\\CaesarCipher\\Module1.vb",
               "RelativeDocumentMoniker": "Module1.vb",
-              "ToolTip": "C:\\Users\\joshi\\Documents\\cipher-challange\\CaesarCipher\\Module1.vb",
-              "RelativeToolTip": "Module1.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\joshi\\Documents\\cipher-challange\\CaesarCipher\\Module1.vb*",
+              "RelativeToolTip": "Module1.vb*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-14T12:09:43.837Z",
               "EditorCaption": ""
