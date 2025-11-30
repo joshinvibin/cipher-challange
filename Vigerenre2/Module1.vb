@@ -12,22 +12,20 @@ Module Module1
             If word(i) <> " " Then
                 Select Case count
                     Case 1
-                        letterasc = Asc(word(i)) - 13
+                        letterasc = Asc(word(i)) - 5
                     Case 2
-                        letterasc = Asc(word(i)) - 4
-                    Case 3
-                        letterasc = Asc(word(i)) - 22
-                    Case 4
-                        letterasc = Asc(word(i)) - 24
-                    Case 5
-                        letterasc = Asc(word(i)) - 14
-                    Case 6
                         letterasc = Asc(word(i)) - 17
-                    Case 7
-                        letterasc = Asc(word(i)) - 10
+                    Case 3
+                        letterasc = Asc(word(i)) - 8
+                    Case 4
+                        letterasc = Asc(word(i)) - 4
+                    Case 5
+                        letterasc = Asc(word(i)) - 13
+                    Case 6
+                        letterasc = Asc(word(i)) - 3
                 End Select
                 count = count + 1
-                If count = 8 Then count = 1
+                If count = 7 Then count = 1
                 If letterasc < 65 Then letterasc += 26
 
                 decrypt += Chr(letterasc)
