@@ -26,13 +26,20 @@ Module Module1
     End Function
     Sub Main()
         Dim word As String = ReadLine()
+        Dim clean As String = ""
         Dim letters(26) As Integer
         Dim freqTab(26) As String
 
-        Dim temp As Integer = 0
-        letters = Freq_Analysis(word)
+        For i = 0 To word.Length() - 1
+            If Asc(word(i)) < 92 And Asc(word(i)) > 64 Then
+                clean &= word(i)
+            End If
+        Next i
 
-        WriteLine(word.Length())
+        Dim temp As Integer = 0
+        letters = Freq_Analysis(clean)
+
+        WriteLine(clean.Length())
 
         'For i = 1 To 25
         '    If letters(i) > letters(i) + 1 Then
