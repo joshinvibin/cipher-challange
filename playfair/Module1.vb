@@ -17,10 +17,13 @@
                 encrypt &= input(i)
             End If
         Next i
+
         Dim decrypt As String = ""
 
         For i = 0 To encrypt.Length() / 2
-            Dim encryptSplit As String = encrypt(2 * i) + encrypt((2 * i) + 1)
+            Dim encryptSplit As String = ""
+            If i < encrypt.Length() - 2 Then encryptSplit = encrypt(2 * i) + encrypt((2 * i) + 1)
+
             Dim location1x As Integer = 0
             Dim location2x As Integer = 0
             Dim location1y As Integer = 0
@@ -38,28 +41,16 @@
                 Next j
             Next k
 
-            If location1x = location2x Or location1y = location2y Then
-                If location1x = location2x Then
-                    If location1y = 0 Then
-                        location1y = 5
-                    End If
-                    If location2y = 0 Then
-                        location2y = 5
-                    End If
-                    decrypt &= key(location1x, location1y - 1)
-                    decrypt &= key(location2x, location2y - 1)
-                End If
-
-                If location1y = location2y Then
-                    If location1x = 0 Then
-                        location1x = 5
-                    End If
-                    If location2x = 0 Then
-                        location2x = 5
-                    End If
-                    decrypt &= key(location1x - 1, location1y)
-                    decrypt &= key(location2x - 1, location2y)
-                End If
+            If location1x = location2x Then
+                If location1x = 4 Then location1x = -1
+                If location2x = 4 Then location2x = -1
+                decrypt &= key(location1x + 1, location1y)
+                decrypt &= key(location2x + 1, location2y)
+            ElseIf location1y = location2y Then
+                If location1x = 4 Then location1x = -1
+                If location2x = 4 Then location2x = -1
+                decrypt &= key(location1x + 1, location1y)
+                decrypt &= key(location2x + 1, location2y)
             Else
                 decrypt &= key(location2x, location1y)
                 decrypt &= key(location1x, location2y)

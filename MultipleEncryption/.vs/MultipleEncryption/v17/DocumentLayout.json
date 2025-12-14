@@ -5,6 +5,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{52F38A7A-9DFC-4B04-99D7-DF8A30AF1F32}|MultipleEncryption.vbproj|c:\\users\\joshi\\documents\\cipher-challange\\multipleencryption\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{52F38A7A-9DFC-4B04-99D7-DF8A30AF1F32}|MultipleEncryption.vbproj|solutionrelative:module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MultipleEncryption||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +17,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MultipleEncryption",
+              "DocumentMoniker": "C:\\Users\\joshi\\Documents\\cipher-challange\\MultipleEncryption\\MultipleEncryption.vbproj",
+              "RelativeDocumentMoniker": "MultipleEncryption.vbproj",
+              "ToolTip": "C:\\Users\\joshi\\Documents\\cipher-challange\\MultipleEncryption\\MultipleEncryption.vbproj",
+              "RelativeToolTip": "MultipleEncryption.vbproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-12T11:44:45.614Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +38,7 @@
               "RelativeDocumentMoniker": "Module1.vb",
               "ToolTip": "C:\\Users\\joshi\\Documents\\cipher-challange\\MultipleEncryption\\Module1.vb",
               "RelativeToolTip": "Module1.vb",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAkwIkAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAALcAAAAAAAAAAAAtwMUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-11-28T11:42:31.176Z",
               "EditorCaption": ""

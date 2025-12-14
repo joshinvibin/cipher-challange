@@ -100,9 +100,7 @@ Module Module1
             Case 3
                 use = False
         End Select
-
         ReadLine()
-        Clear()
 
         Return use
     End Function

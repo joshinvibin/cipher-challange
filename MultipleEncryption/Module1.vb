@@ -65,7 +65,9 @@ Please choose an option:
             Case 0
                 caesar(1)
             Case 1
+
             Case 2
+                vigenere(1)
             Case 3
         End Select
         ReadLine()
@@ -90,15 +92,17 @@ Please choose an option:
             Case 0
                 caesar(-1)
             Case 1
+
             Case 2
+                vigenere(-1)
             Case 3
         End Select
         ReadLine()
     End Sub
 
     Sub caesar(direction As Integer)
-        Dim encrypt As String = ""
-        Dim decrypt As String = ""
+        Dim input As String = ""
+        Dim output As String = ""
         Dim letter As Integer = 0
         Dim name As String = "plain"
         If direction = -1 Then name = "encrypted"
@@ -109,22 +113,66 @@ Please choose an option:
  \____\__,_|\___||___/\__,_|_|
 
 Enter in your {name} text")
-        encrypt = ReadLine().ToUpper()
+        input = ReadLine().ToUpper()
         Dim key As Integer = tryCatch("Enter your key")
 
-        For i = 0 To encrypt.Length() - 1
-            If Asc(encrypt(i)) < 91 And Asc(encrypt(i)) > 64 Then
-                letter = Asc(encrypt(i)) + key * direction
+        For i = 0 To input.Length() - 1
+            If Asc(input(i)) < 91 And Asc(input(i)) > 64 Then
+                letter = Asc(input(i)) + key * direction
                 If letter < 65 Then letter += 26
                 If letter > 90 Then letter -= 26
             Else
-                letter = Asc(encrypt(i))
+                letter = Asc(input(i))
             End If
-            decrypt += Chr(letter)
+            output += Chr(letter)
         Next i
 
-        WriteLine(decrypt)
+        WriteLine(output)
     End Sub
+
+    Sub vigenere(direction As Integer)
+        Dim key As String = ""
+        Dim input As String = ""
+        Dim output As String = ""
+        Dim curShift As Integer = 0
+        Dim name As String = "plain"
+        Dim letter As Integer = 0
+        If direction = -1 Then name = "encrypted"
+        WriteLine($"__     ___
+\ \   / (_) __ _  ___ _ __   ___ _ __ ___
+ \ \ / /| |/ _` |/ _ \ '_ \ / _ \ '__/ _ \
+  \ V / | | (_| |  __/ | | |  __/ | |  __/
+   \_/  |_|\__, |\___|_| |_|\___|_|  \___|
+           |___/
+
+Enter in you {name} text:")
+        input = ReadLine().ToUpper()
+        input = cleanInput(input)
+
+        WriteLine("Enter your key")
+        key = ReadLine().ToUpper()
+        For i = 0 To input.Length() - 1
+            curShift = Asc(key(i Mod key.Length())) - 65
+            If Asc(input(i)) < 91 And Asc(input(i)) > 64 Then
+                letter = Asc(input(i)) + (curShift * direction)
+                If letter < 65 Then letter += 26
+                If letter > 90 Then letter -= 26
+            Else
+                letter = Asc(input(i))
+            End If
+            output += Chr(letter)
+        Next i
+
+        WriteLine(output)
+    End Sub
+
+    Function cleanInput(input As String) As String
+        Dim output As String = ""
+        For i = 0 To input.Length() - 1
+            If Asc(input(i)) > 64 And Asc(input(i)) < 91 Then output &= input(i)
+        Next i
+        Return output
+    End Function
 
     Sub Main()
         Dim use As Boolean = True
@@ -143,13 +191,17 @@ Enter in your {name} text")
 
 Please choose an option:
     Encrypt
-    Decrypt", 12, 1)
+    Decrypt
+    Exit", 12, 2)
             Select Case input
                 Case 0
                     encrypt()
                 Case 1
                     decrypt()
+                Case 2
+                    use = False
             End Select
+            Clear()
         Loop Until use = False
     End Sub
 
