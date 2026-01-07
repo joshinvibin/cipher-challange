@@ -10,4 +10,4 @@ I do want to credit my good friend Stef. He wrote and looked over most of the co
 
 Thanks for checking the repository out. If on the offchance you did have any burning questions I think its an issue you open. This is my first public repository so im just getting started with the inner workings. Hope this helps someone however many years in the future
 
-- Joshin
+-- Joshin
