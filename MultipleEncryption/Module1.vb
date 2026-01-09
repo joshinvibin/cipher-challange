@@ -92,8 +92,6 @@ Please choose an option:
     Vigenere
     Rail fence", 8, 3)
 
-        Clear()
-
         Select Case input
             Case 0
                 output = caesar(-1)
@@ -107,7 +105,6 @@ Please choose an option:
 
         WriteLine("Your decrypted text is :")
         WriteLine(output)
-
         ReadLine()
     End Sub
 
@@ -257,9 +254,9 @@ Please enter in your encrypted text")
                 add2 = 2
         End Select
 
-        Dim rail1 As String = input.Substring(0, (input.Length / 4) + add1)
-        Dim rail2 As String = input.Substring((input.Length / 4) + add1, (input.Length / 2) + add2)
-        Dim rail3 As String = input.Substring(((input.Length / 4) * 3) + add2 + add1, input.Length / 4)
+        Dim rail1 As String = input.Substring(0, (input.Length \ 4) + add1)
+        Dim rail2 As String = input.Substring((input.Length \ 4) + add1, (input.Length / 2) + add2)
+        Dim rail3 As String = input.Substring(((input.Length \ 4) * 3) + add2 + add1, input.Length / 4)
 
         For i = 1 To input.Length()
             If i Mod 2 = 0 Then
@@ -320,7 +317,7 @@ Enter in your {type} text")
    \_/  |_|\__, |\___|_| |_|\___|_|  \___|
            |___/
 
-Enter in you {type} text:")
+Enter in your {type} text:")
         Dim input As String = ReadLine().ToUpper()
         input = cleanInput(input)
 
